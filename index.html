@@ -1,0 +1,74 @@
+<!-- index.html -->
+
+<!-- Boilerplate with ! + ENTER -->
+
+<!-- Format with CTRL + SHIFT + ALT + c -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+
+
+
+<body>
+
+    <nav class= "topnav">
+        <a href="#">CarGoVrooom</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">We're No Strangers to Love</a>
+        <a href="https://www.youtube.com/watch?v=jDwVkXVHIqg">Toad Sings Chandelier</a>
+    </nav>
+
+    <div id="formDiv">
+        <p>Welcome to CarGoVrooom!!! CheckOut the F1 Stats, Right Here!!!</p>
+
+        <form action="/action" id="form" method="post">
+            <div class="entryPoints">
+                <div class="formGroup">
+                    <label for=""></label>
+                    <input type="text" id="typeId" name="type" placeholder="Season">
+                    <label for=""></label>
+                    <input type="text" id="typeId" name="type" placeholder="Round">
+                    <button type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+
+        <table id="resultsTable">
+            <thead>
+                <tr>
+                    <td>Position</td>
+                    <td>Name</td>
+                    <td>Nationality</td>
+                    <td>Sponsore</td>
+                    <td>Points</td>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+
+
+        <template id="myTemplate">
+            <tr>
+                <td id="Season"></td>
+                <td id="Round"></td>
+                <td id="TimeOfPerform"></td>
+                <td id="Sponsor"></td>
+                <td></td>
+            </tr>
+        </template>
+
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
